@@ -10,6 +10,11 @@ function rechnen() {
   const jahre = document.getElementById("jahre").value;
   const zuE2 = document.getElementById("zuE2").value;
   var zuE = document.getElementById("zuE").value;
+  if (zuE2 != 0) {
+    zuE = (parseInt(zuE) + parseInt(zuE2)) / 2;
+  } else {
+    zuE = zuE;
+  }
   const erg = document.getElementById("ergebniss");
   const y1 = (zuE - 9408) / 10000;
   const z1 = (zuE - 14532) / 10000;
@@ -17,13 +22,6 @@ function rechnen() {
   const z2 = (zuE - 14254) / 10000;
   const y3 = (zuE - 9000) / 10000;
   const z3 = (zuE - 13996) / 10000;
-  if (zuE2 != 0) {
-    zuE =
-      (parseInt(document.getElementById("zuE").value) + parseInt(zuE2)) /
-      parseInt(2);
-  } else {
-    zuE = document.getElementById("zuE").value;
-  }
   console.log("zuE", zuE);
   switch (jahre) {
     case "zwanzig":
