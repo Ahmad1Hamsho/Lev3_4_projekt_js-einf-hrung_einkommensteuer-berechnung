@@ -18,10 +18,13 @@ function rechnen() {
   const y3 = (zuE - 9000) / 10000;
   const z3 = (zuE - 13996) / 10000;
   if (zuE2 != 0) {
-    zuE = (document.getElementById("zuE").value + zuE2) / 2;
+    zuE =
+      (parseInt(document.getElementById("zuE").value) + parseInt(zuE2)) /
+      parseInt(2);
   } else {
     zuE = document.getElementById("zuE").value;
   }
+  console.log("zuE", zuE);
   switch (jahre) {
     case "zwanzig":
       if (zuE <= 9408) {
