@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background-color: silver;
+}
+
+body .container {
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  border: 3px solid black;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+  color: white;
+  text-shadow: 3px 3px 4px black;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 2em;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+body .container select {
+  background-color: silver;
+  width: 6vw;
+  height: 4vh;
+  font-size: 0.6em;
+  font-weight: bolder;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body .container #per {
+  width: 15vw;
+}
+
+body .container #zuE2 {
+  display: none;
+}
+
+body .container .number {
+  background-color: silver;
+  width: 20vw;
+  height: 4vh;
+  font-size: 0.6em;
+  font-weight: bolder;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body .container #ergebniss {
+  text-align: center;
+  -webkit-animation-name: erg;
+          animation-name: erg;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes erg {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes erg {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+/*# sourceMappingURL=index.css.map */

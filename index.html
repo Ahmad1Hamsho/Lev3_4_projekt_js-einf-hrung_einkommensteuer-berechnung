@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lev3_4_projekt_js-einführung_einkommensteuer-berechnung</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <label for="">Wählen Sie bitte das Jahr:</label>
+        <select name="" id="jahre">
+          <option value="zwanzig">2020</option>
+          <option value="neunzehn">2019</option>
+          <option value="achtzehn">2018</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="eins"
+          onclick="zusammen()"
+          id="einzel"
+          value="Einzel"
+        />Einzel
+        <input
+          type="radio"
+          name="eins"
+          id="zusammen"
+          onclick="zusammen()"
+          value="Zusammen"
+        />Zusammen
+      </div>
+      <div>
+        <label for="">Wie Hoch ist dein Gehalt?</label>
+        <input type="number" class="number" id="zuE" placeholder="Pro Jahr" />
+        <input
+          type="number"
+          class="number"
+          id="zuE2"
+          placeholder="person(2) Pro Jahr"
+        />
+      </div>
+
+      <button onclick="rechnen()">Rechnen</button>
+      <div id="ergebniss"></div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
