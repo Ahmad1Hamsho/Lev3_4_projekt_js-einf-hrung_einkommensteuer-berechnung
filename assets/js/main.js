@@ -22,7 +22,7 @@ function rechnen() {
   const z2 = (zuE - 14254) / 10000;
   const y3 = (zuE - 9000) / 10000;
   const z3 = (zuE - 13996) / 10000;
-  console.log("zuE", zuE);
+
   switch (jahre) {
     case "zwanzig":
       if (zuE <= 9408) {
